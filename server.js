@@ -4,7 +4,7 @@ import cors from "cors";
 import authRouter from "./routes/auth.js";
 import productRoutes from "./routes/product.js";
 var app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 //Allow only port 5173
